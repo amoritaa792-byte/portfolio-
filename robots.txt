@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amoritaa792-byte.github.io/portfolio/sitemap.xml
