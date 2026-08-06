@@ -34,6 +34,29 @@ animation:fadeUp .8s ease;
 transform:translateY(-8px);
 transition:.3s;
 }
+  #darkMode{
+background:white;
+border:none;
+padding:8px 15px;
+border-radius:25px;
+cursor:pointer;
+font-size:18px;
+font-weight:bold;
+}
+
+.dark{
+background:#121212;
+color:white;
+}
+
+.dark .card{
+background:#1f1f1f;
+color:white;
+}
+
+.dark h2{
+color:#64B5F6;
+} 
 <style>
 
 *{
@@ -263,8 +286,10 @@ id="topBtn">
 <a href="#keahlian">Keahlian</a>
 <a href="#layanan">Layanan</a>
 <a href="#kontak">Kontak</a>
-</nav>
 
+<button id="darkMode">🌙</button>
+
+</nav>
 <img src="Profil.png" class="profile" alt="Foto Profil">
 
 <h1>Amorita Azza Khikmatul Mardhiyah</h1>
@@ -363,15 +388,15 @@ Download CV
 
 </div>
 
-<div class="card" id="kontak">
+<div class="btn-group">
 
-<h2>Kontak</h2>
+<a href="#kontak" class="btn">
+<i class="fa-solid fa-envelope"></i> Hubungi Saya
+</a>
 
-<p><i class="fa-solid fa-phone"></i> 085716396378</p>
-
-<br>
-
-<p><i class="fa-solid fa-envelope"></i> amoritaa792@gmail.com</p>
+<a href="CV-Amorita.pdf" class="btn" download>
+<i class="fa-solid fa-download"></i> Download CV
+</a>
 
 </div>
     </div>
@@ -381,7 +406,15 @@ Download CV
 © 2026 Amorita Azza Khikmatul Mardhiyah
 
 </footer>
+<script>
 
+const darkButton = document.getElementById("darkMode");
+
+darkButton.addEventListener("click", function(){
+    document.body.classList.toggle("dark");
+});
+
+</script>
 </body>
 
 </html>
