@@ -76,7 +76,43 @@ text-align:center;
 padding:20px;
 margin-top:40px;
 }
+nav{
+margin-bottom:25px;
+}
 
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-size:18px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#FFD54F;
+}
+
+.btn-group{
+margin-top:25px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 28px;
+background:white;
+color:#2563EB;
+font-weight:bold;
+text-decoration:none;
+border-radius:30px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#FFD54F;
+color:black;
+transform:scale(1.05);
+}
 </style>
 
 </head>
@@ -85,16 +121,27 @@ margin-top:40px;
 
 <header>
 
+<nav>
+<a href="#tentang">Tentang</a>
+<a href="#keahlian">Keahlian</a>
+<a href="#layanan">Layanan</a>
+<a href="#kontak">Kontak</a>
+</nav>
+
 <img src="Profil.png" class="profile" alt="Foto Profil">
 
 <h1>Amorita Azza Khikmatul Mardhiyah</h1>
 
 <p>Mahasiswa Pendidikan Guru Madrasah Ibtidaiyah (PGMI)</p>
 
+<div class="btn-group">
+<a href="#kontak" class="btn">Hubungi Saya</a>
+</div>
+
 </header>
 
 <div class="container">
-    <div class="card">
+    <div class="card"id="tentang">
 <h2>Tentang Saya</h2>
 
 <p>
@@ -105,7 +152,7 @@ serta aktif membuka jasa pengecekan similarity dokumen akademik menggunakan Turn
 
 </div>
 
-<div class="card">
+<div class="card"id="keahlian">
 
 <h2>Keahlian</h2>
 
