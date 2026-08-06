@@ -9,7 +9,31 @@
 
 <title>Portofolio | Amorita Azza Khikmatul Mardhiyah</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+/* ===== Animasi ===== */
 
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+header{
+animation:fadeUp 1s ease;
+}
+
+.card{
+animation:fadeUp .8s ease;
+}
+
+.card:hover{
+transform:translateY(-8px);
+transition:.3s;
+}
 <style>
 
 *{
@@ -185,6 +209,34 @@ font-size:20px;
 cursor:pointer;
 box-shadow:0 5px 15px rgba(0,0,0,.3);
 }
+  /* ===== Timeline Pendidikan ===== */
+
+.timeline{
+border-left:4px solid #1565C0;
+padding-left:25px;
+margin-top:20px;
+}
+
+.timeline-item{
+position:relative;
+margin-bottom:20px;
+}
+
+.timeline-item::before{
+content:"";
+position:absolute;
+left:-34px;
+top:6px;
+width:16px;
+height:16px;
+background:#1565C0;
+border-radius:50%;
+}
+
+.timeline-item h3{
+color:#1565C0;
+margin-bottom:8px;
+} 
 </style>
 
 </head>
@@ -234,16 +286,25 @@ Download CV
 </div>
 
 </header>
+<div class="card" id="pendidikan">
 
-<div class="container">
-    <div class="card"id="tentang">
-<h2>Tentang Saya</h2>
+<h2><i class="fa-solid fa-graduation-cap"></i> Pendidikan</h2>
 
-<p>
-Saya merupakan mahasiswa akhir Program Studi Pendidikan Guru Madrasah Ibtidaiyah (PGMI)
-yang memiliki minat pada pengembangan media pembelajaran, penelitian, teknologi pendidikan,
-serta aktif membuka jasa pengecekan similarity dokumen akademik menggunakan Turnitin.
-</p>
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>S1 Pendidikan Guru Madrasah Ibtidaiyah (PGMI)</h3>
+
+<p><strong>IAI Badrus Sholeh</strong></p>
+
+<p>2022 – Sekarang</p>
+
+<p>Mahasiswa tingkat akhir yang berfokus pada pengembangan media pembelajaran, penelitian pendidikan, dan teknologi pendidikan.</p>
+
+</div>
+
+</div>
 
 </div>
 
